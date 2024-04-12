@@ -48,6 +48,9 @@ const button = document.createElement('button')
 button.classList.add('btn','btn-primary')
 button.innerText = 'Add'
 
+const language = document.createElement('p')
+language.className = 'card-info'
+language.innerText = book1.language
 
 cardBody.append(title, author, button )
 parentDiv.appendChild(cardBody)
