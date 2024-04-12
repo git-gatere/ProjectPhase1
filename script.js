@@ -37,13 +37,11 @@ cardBody.classList.add('card-body')
 const title = document.createElement('h5')
 title.className = 'card-title'
 title.innerText = book1.title
-cardBody.append(title)
-parentDiv.appendChild(cardBody)
 
 
-const description = document.createElement('p')
-description.className = 'card-text'
-description.innerText = book1.author
+const author = document.createElement('p')
+author.className = 'card-text'
+author.innerText = book1.author
 
 
 const button = document.createElement('button')
@@ -51,7 +49,8 @@ button.classList.add('btn','btn-primary')
 button.innerText = 'Add'
 
 
-
+cardBody.append(title, author, button )
+parentDiv.appendChild(cardBody)
 
 booksContainer.appendChild(parentDiv);
 }
