@@ -34,6 +34,11 @@ parentDiv.appendChild(image)
 const cardBody = document.createElement('div')
 cardBody.classList.add('card-body')
 
+const title = document.createElement('h5')
+title.className = 'card-title'
+title.innerText = book1.title
+cardBody.append(title)
+parentDiv.appendChild(cardBody)
 
 
 booksContainer.appendChild(parentDiv);
