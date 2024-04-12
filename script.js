@@ -31,6 +31,10 @@ image.alt = book1.title
 
 
 parentDiv.appendChild(image)
+const cardBody = document.createElement('div')
+cardBody.classList.add('card-body')
+
+
 
 booksContainer.appendChild(parentDiv);
 }
