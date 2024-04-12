@@ -52,7 +52,7 @@ const language = document.createElement('p')
 language.className = 'card-info'
 language.innerText = book1.language
 
-cardBody.append(title, author, button )
+cardBody.append(title, author, language, button )
 parentDiv.appendChild(cardBody)
 
 booksContainer.appendChild(parentDiv);
