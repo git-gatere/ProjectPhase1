@@ -48,6 +48,14 @@ const button = document.createElement('button')
 button.classList.add('btn','btn-primary')
 button.innerText = 'Add'
 
+const buttonFunction = button.addEventListener('click', reaction)
+function reaction() {
+    if (button.innerText = 'Add') {
+        button.innerText = 'Added'
+    } else {
+        button.innerText = 'Add'
+    }
+}
 const language = document.createElement('p')
 language.className = 'card-info'
 language.innerText = book1.language
