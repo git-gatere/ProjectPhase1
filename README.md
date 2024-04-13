@@ -8,7 +8,7 @@
 Dream Lib is a webpage for a library by the same name where readers come to purchase books that are in the library.
 
 ## Set-up Instructions
-Fork and clone it to your local environment from GitHub. Open it on your browser and use as desired.
+Fork and clone it to your local environment from GitHub. Open it in your VS Code. Open your VS code terminal and run the following command: npx json-server --watch db.json. Then Go live on your browser and use as desired.
 
 ## Installation Requirements
 Git
