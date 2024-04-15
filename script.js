@@ -2,9 +2,20 @@
 document.addEventListener('DOMContentLoaded',() => {
 
     fetchBooks()
+
+
+const form = document.querySelector('#searchform')
+form.addEventListener('submit',(e)=>{
+    e.preventDefault()
+    const input = document.querySelector('#search')
+    if (input.value) {fetchBooks(input.value)}
+    else {
+        fetchBooks()
+    }
+})
 })
 
-function fetchBooks() {
+function fetchBooks(searched = '') {
     fetch(`http://localhost:3000/books`, {
         method: 'GET',
         headers: {
@@ -13,7 +24,16 @@ function fetchBooks() {
     })
     .then((res) => res.json())
     .then((book) => {
-        book.forEach((book1) => renderBooks(book1));
+        if (searched) {
+
+            document.querySelector('#book').innerHTML=''
+
+
+            book.filter((book1) => book1.title.includes(searched))
+            .forEach((book1) => renderBooks(book1))
+        } else {
+            book.forEach((book1) => renderBooks(book1));
+        }
     })
     
 }
