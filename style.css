@@ -23,10 +23,16 @@
     margin-right: 16px;
     font-size: 17px;
   }
-#title {text-align: center;}  
+#title {text-align: center;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        color: purple;
+        font-size: xx-large;
+      
+}  
 body {
     background-image: url("./images1/crampledpaper.jpg");
     background-color: #cccccc;
     
    }
-   .row 
+   

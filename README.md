@@ -14,7 +14,7 @@ Fork and clone it to your local environment from GitHub. Open it in your VS Code
 Git
 
 ## Live link
-https://github.com/git-gatere/ProjectPhase1.git
+ https://git-gatere.github.io/ProjectPhase1.github.io/
 
 ## Technologies Used
 JavaScript
