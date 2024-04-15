@@ -13,7 +13,7 @@
   }
   .topnav a:hover {
     background-color: wheat;
-    color: grey;
+    color: wheat;
   }
   .topnav input[type=text] {
     float: right;
