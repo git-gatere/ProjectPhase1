@@ -8,12 +8,12 @@
     color: black;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: gray;
+    text-decoration: black;
     font-size: 17px;
   }
   .topnav a:hover {
-    background-color: gray;
-    color: black;
+    background-color: maroon;
+    color: maroon;
   }
   .topnav input[type=text] {
     float: right;
